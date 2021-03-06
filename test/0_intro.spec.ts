@@ -1,17 +1,18 @@
 import fc from "fast-check";
-import { prop, sample } from "./helpers";
 
 describe("example", () => {
   it("playground", () => {
     // integer
     // map
     // filter
-    // oneof
     // float
+    // oneof
+    // record
     // string
     // boolean
     // array
-    // record
+    // sample
+    // statistics
     // property
     // toBeGreaterThanOrEqual
     // toBeLessThanOrEqual

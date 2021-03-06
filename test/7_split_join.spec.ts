@@ -6,7 +6,7 @@ describe("take/drop", () => {
   prop(
     "drop(j,(take(j+i,xs)) = take(i, (drop(j, xs))",
     fc.property(
-      fc.array(fc.float(), { minLength: 0, maxLength: 20 }),
+      fc.array(fc.anything(), { minLength: 0, maxLength: 20 }),
       fc.integer(0, 25),
       fc.integer(0, 25),
       (xs, j, i) => {

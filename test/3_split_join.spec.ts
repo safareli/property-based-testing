@@ -35,7 +35,6 @@ describe("split/join", () => {
       ([arr, s]) => {
         expect(arr.join(s).split(s)).toEqual(arr);
       }
-    ),
-    { seed: 1220931243, path: "8", endOnFailure: true }
+    )
   );
 });
