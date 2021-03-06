@@ -18,8 +18,12 @@ describe("sort", () => {
 
   prop(
     "isSorted(xs.sort(f),f)",
-    fc.property(fc.array(fc.anything()), fc.compareFunc(), (arr, f) => {
-      expect(isSorted(sort(arr, f), f)).toEqual(true);
-    })
+    fc.property(
+      fc.array(fc.anything().filter((x) => x !== undefined)),
+      fc.compareFunc(),
+      (arr, f) => {
+        expect(isSorted(sort(arr, f), f)).toEqual(true);
+      }
+    )
   );
 });
